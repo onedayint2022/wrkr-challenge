@@ -1,0 +1,39 @@
+@import '../../Constant/color.scss';
+.Search_container {
+    text-align: center;
+    >h1 {
+        margin: 2rem 0;
+    }
+    >div {
+        background: $bg_light;
+        border: 0.1rem solid $dark;
+        height: 6rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.Search_inputContainer {
+    position: relative;
+    >span {
+        position: absolute;
+        left: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+        color: $dark;
+    }
+    >input {
+        height: 2rem;
+        border-radius: 2rem;
+        width: 20rem;
+        padding-left: 3rem;
+        border: 0.1rem solid $dark;
+        &:focus {
+            outline: none;
+        }
+        @media only screen and (max-width: 600px) {
+            width: 15rem;
+        }
+    }
+}

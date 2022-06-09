@@ -1,0 +1,24 @@
+@import '../../Constant/color.scss';
+.Result_container {
+    margin-top: 2.5rem;
+    >div:first-child>span {
+        margin-right: 1rem;
+    }
+    flex: 1;
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+        width: 0;
+    }
+}
+
+.Result_divider {
+    height: 0.1rem;
+    background: $divider;
+    margin: 1.5rem 0;
+}
+
+.Result_resultCount {
+    font-weight: 500;
+}
+
+.Result_resultContainer {}

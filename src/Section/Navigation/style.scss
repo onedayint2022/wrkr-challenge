@@ -1,0 +1,23 @@
+@import '../../Constant/color.scss';
+.Navigation_container {
+    width: 20rem;
+    height: 100%;
+    border-right: 0.1rem solid $dark;
+    background: $bg_light;
+    >div {
+        height: 4rem;
+        display: flex;
+        align-items: center;
+        padding-left: 2rem;
+        border-bottom: 0.1rem solid $dark;
+        &:hover {
+            color: $blue;
+            transition: 0.1s;
+            cursor: pointer;
+        }
+    }
+    @media screen and (max-width:1024px) {
+        position: fixed;
+        z-index: 2;
+    }
+}

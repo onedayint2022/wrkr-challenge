@@ -1,0 +1,28 @@
+@import '../../Constant/color.scss';
+.DropDown_container {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    >span {
+        margin-right: 1rem;
+    }
+}
+
+.DropDown_listContainer {
+    position: absolute;
+    background: $white;
+    border: 0.1rem solid $dark;
+    left: 0;
+    top: calc(100% + 0.5rem);
+    padding: 0.5rem 0;
+    border-radius: 0.4rem;
+    >div {
+        height: 2rem;
+        line-height: 2rem;
+        padding: 0 1rem;
+        &:hover {
+            color: $blue;
+            transition: 0.1s;
+        }
+    }
+}

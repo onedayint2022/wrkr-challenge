@@ -1,0 +1,26 @@
+@import '../../Constant/color.scss';
+.Header_container {
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 0.1rem solid $dark;
+    z-index: 3;
+    >img {
+        height: 4rem;
+        padding-left: 4rem;
+    }
+    >span {
+        font-size: 1.6rem;
+        cursor: pointer;
+        display: none;
+    }
+    @media only screen and (max-width: 1024px) {
+        padding-left: 2rem;
+        >span {
+            display: inline;
+        }
+        >img {
+            padding-left: 2rem;
+        }
+    }
+}
